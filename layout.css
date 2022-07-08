@@ -1,0 +1,29 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.container{
+    display: flex;
+    flex: 1;
+}
+main{
+    flex: 1;
+    padding: 0 20px;
+}
+nav{
+    flex: 0 0 300px;
+    padding: 0 10px;
+}
+aside{
+    flex: 0 0 130px;
+    padding: 0 10px;
+}
+label{
+    margin-left: 5px;
+}
+textarea {
+    min-height: 5rem;
+    overflow-y: hidden;
+    resize: none;
+}

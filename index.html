@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이정원의 홈페이지</title>
+    <link rel="stylesheet" href="index.css"/>
+    <link rel="stylesheet" href="layout.css"/>
+</head>
+<body>
+    <header>환영합니다</header>
+    <div class="container">
+        <nav>
+            <h4>이정원</h4>
+            <ul>
+                <li>한영중학교 졸업</li>
+                <li>한영고등학교 졸업</li>
+                <li>숭실대학교 평생교육원 졸업예정</li>
+                <li>블록체인 부트캠프 수강중</li>
+            </ul>
+        </nav>
+        <main>
+            이름<input type="text" name="name" placeholder="이름을 입력하세요." autofocus class="txt"/>
+            남<input type="radio" name="gender" value="남" id="men"/><label for="men"></label>
+            여<input type="radio" name="gender" value="여" id="women"/><label for="women"></label>
+            <p></p><textarea id="newtxtContent" placeholder="하고 싶은 말을 남겨주세요." onkeydown="resize(this)" onkeyup="resize(this)"></textarea>
+            <button class="btn-submit">제출</button>
+        </main>
+        <aside>
+            <a href="https://blog.naver.com/terykid" target="_blank">블로그</a>
+            <a href="https://www.youtube.com/channel/UCHny-haLamlkSUA2y0nTaNA" target="_blank">유튜브</a>    
+        </aside>
+    </div>
+    <footer>
+        <ul>
+            <li>Tel:010-2272-4797</li>
+            <li>E-mail:terykid@gmail.com</li>
+        </ul>
+    </footer>
+    
+</body>
+</html>
