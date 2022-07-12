@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <title>유효성 검사</title>
+     <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>회원가입</h1>
+    <fieldset>
+      <label>아이디</label>
+      <input type="text" id="username">
+      <div class="failure-message hide">아이디는 네 글자 이상이어야 합니다</div>
+      <div class="success-message hide">사용할 수 있는 아이디입니다</div>
+      <div class="numen-message hide">영어 또는 숫자만 가능</div>
+    </fieldset>
+
+    <fieldset>
+      <label>비밀번호</label>
+      <input type="password" id="password">
+      <div class="strpassword-message hide">최소 8자 이상이면서, 알파벳과 특수문자 하나 이상 포함</div>
+    </fieldset>
+
+    <fieldset>
+      <label>비밀번호 확인</label>
+      <input type="password" id="password-retype">
+      <div class="mismatch-message hide">비밀번호가 일치하지 않습니다.</div>
+    </fieldset>
+
+    <fieldset>
+      <button type="button" id="btn" class="btn">회원가입</button>
+    </fieldset>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>회원가입이 정상적으로 완료되었습니다.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+  </body>
+
+</html>
