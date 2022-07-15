@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./styles.css";
 
 function CheckboxExample(){
+    console.log("rerendered?");
     const [isChecked, setIsChecked] = useState(false);
 
     const handleChecked = (event) => {

@@ -1,0 +1,17 @@
+.App {
+    font-family: sans-serif;
+    text-align: center;
+  }
+  select {
+    width: 8rem;
+    padding: 0.8em 0.5em;
+    border: 1px solid#34495e;
+    font-family: inherit;
+    color: #34495e;
+    font-weight: bold;
+  }
+  
+  .App > h3 {
+    color: #34495e;
+  }
+  
