@@ -15,7 +15,7 @@ const App = () => {
 
 const Learn = (props) => {
   return <div className="Learn">
-    <p>{props.attribute}</p>
+    <p>{props.attribute}</p> {/* 문장렌더링 */}
   </div>
 };
 
