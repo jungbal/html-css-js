@@ -2,7 +2,7 @@ import "./styles.css";
 import React, { useState } from "react";
 
 function NameForm(){
-    const [named, setNamed] = useState("");
+    const [named, setNamed] = useState("");//useState 실습
 
     const handleChange = (el) => {
         setNamed(el.target.value);
