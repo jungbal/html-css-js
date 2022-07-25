@@ -3,7 +3,7 @@ import React, { useState } from "react";
 
 export default function App() {
   const [username, setUsername] = useState("");
-  const [msg, setMsg] = useState("");
+  const [msg, setMsg] = useState("");//입력값 useState실습
 
   return (
     <div className="App">
