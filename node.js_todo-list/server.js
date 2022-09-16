@@ -58,6 +58,28 @@ app.get('/list', isLogin, function(req, res){
     });
 })
 
+app.get('/search', function(req, res){
+    db = client.db('todoapp');
+    console.log(req.query.value)
+    const searchCon = [
+        {
+            $search: {
+                index: 'titlesearch',
+                text: {
+                    query:  req.query.value,
+                    path: 'date',
+                }
+            }
+        },
+        { $sort : {title : 1}}
+    ]
+    db.collection('post').aggregate(searchCon).toArray(function(err, result){
+        if(err) return console.log(err)
+        console.log(result)
+        res.render('search.ejs', {post: result})
+    })
+})
+
 app.get('/detail/:id', isLogin, function(req, res){
     db = client.db('todoapp');
     db.collection('post').findOne({_id : parseInt(req.params.id)}, function(err, result){
@@ -205,5 +227,6 @@ app.delete('/delete', function(req, res){
 
 
 })
+
 
 
